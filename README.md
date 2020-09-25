@@ -2,10 +2,10 @@
 
 > Detect cyclic object reference in JavaScript.
 
-- Support `Symbol` key
+- Support `Symbol` key.
 - Zero dependency.
-- Super fast.
-- Just **270 bytes** of gzipped ES3
+- Very fast ⚡️.
+- Just **270 bytes** of gzipped ES3.
 
 ## Install
 

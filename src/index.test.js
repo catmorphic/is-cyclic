@@ -1,5 +1,5 @@
 import it from "ava";
-import isCyclic from "./is-cyclic";
+import isCyclic from ".";
 
 it("detects regular cyclic object", (t) => {
   const obj = { a: 1, b: 2, c: { d: 9 } };

@@ -1,8 +1,8 @@
 {
   "name": "is-cyclic",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "High-performance, zero-dependency library to detect cyclic JavaScript object.",
-  "source": "is-cyclic.js",
+  "source": "src/index.js",
   "main": "dist/is-cyclic.js",
   "module": "dist/is-cyclic.m.js",
   "esmodule": "dist/is-cyclic.modern.js",
@@ -13,8 +13,8 @@
   },
   "ava": {
     "require": [
-			"esm"
-		]
+      "esm"
+    ]
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,10 @@
     "url": "https://github.com/levibit/is-cyclic/issues"
   },
   "homepage": "https://github.com/levibit/is-cyclic#readme",
+  "files": [
+    "src",
+    "dist"
+  ],
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
