@@ -4,8 +4,6 @@
 
 - Support `Symbol` key.
 - Zero dependency.
-- Very fast ⚡️.
-- Just **270 bytes** of gzipped ES3.
 
 ## Install
 

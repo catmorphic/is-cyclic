@@ -1,23 +1,23 @@
-import it from "ava";
-import isCyclic from ".";
+import test from 'ava';
+import isCyclic from '.';
 
-it("detects regular cyclic object", (t) => {
-  const obj = { a: 1, b: 2, c: { d: 9 } };
-  obj.c.e = obj;
+test('detects regular cyclic object', t => {
+	const object = {a: 1, b: 2, c: {d: 9}};
+	object.c.e = object;
 
-  t.is(isCyclic(obj), true);
+	t.is(isCyclic(object), true);
 });
 
-it("detects cyclic object with symbol keys", (t) => {
-  const obj = { a: 1, b: 2 };
-  const key = Symbol("key");
-  obj[key] = obj;
+test('detects cyclic object with symbol keys', t => {
+	const object = {a: 1, b: 2};
+	const key = Symbol('key');
+	object[key] = object;
 
-  t.is(isCyclic(obj), true);
+	t.is(isCyclic(object), true);
 });
 
-it("recognizes non-cyclic object", (t) => {
-  const obj = { a: 1, b: 2, c: { d: 8, e: { f: 9 } } };
+test('recognizes non-cyclic object', t => {
+	const object = {a: 1, b: 2, c: {d: 8, e: {f: 9}}};
 
-  t.is(isCyclic(obj), false);
+	t.is(isCyclic(object), false);
 });
