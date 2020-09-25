@@ -1,0 +1,44 @@
+{
+  "name": "is-cyclic",
+  "version": "0.1.0",
+  "description": "High-performance, zero-dependency library to detect cyclic JavaScript object.",
+  "source": "is-cyclic.js",
+  "main": "dist/is-cyclic.js",
+  "module": "dist/is-cyclic.m.js",
+  "esmodule": "dist/is-cyclic.modern.js",
+  "scripts": {
+    "test": "ava",
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "ava": {
+    "require": [
+			"esm"
+		]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/levibit/is-cyclic.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Cyclic"
+  ],
+  "author": "Levi Wong",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/levibit/is-cyclic/issues"
+  },
+  "homepage": "https://github.com/levibit/is-cyclic#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "ava": "^3.12.1",
+    "babel-jest": "^26.3.0",
+    "eslint": "^7.9.0",
+    "esm": "^3.2.25",
+    "microbundle": "^0.12.3",
+    "prettier": "^2.1.2"
+  },
+  "dependencies": {}
+}
