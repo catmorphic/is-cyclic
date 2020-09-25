@@ -1,6 +1,6 @@
 {
   "name": "is-cyclic",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "A simple library to detect cyclic object references in JavaScript.",
   "source": "src/index.js",
   "main": "dist/is-cyclic.js",
