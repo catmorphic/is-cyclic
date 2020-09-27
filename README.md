@@ -16,12 +16,12 @@ npm install --save is-cyclic
 Pass an object.
 
 ```js
-import isCyclic from "is-cyclic";
+import isCyclic from 'is-cyclic'
 
-const obj = { a: 1, b: 2, c: { d: 9 } };
-obj.c.e = obj;
+const obj = { a: 1, b: 2, c: { d: 9 } }
+obj.c.e = obj
 
-isCyclic(obj); // => true
+isCyclic(obj) // => true
 ```
 
 ### License
