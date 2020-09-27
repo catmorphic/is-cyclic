@@ -1,16 +1,16 @@
 {
   "name": "is-cyclic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple library to detect cyclic object references in JavaScript.",
   "source": "src/index.js",
   "main": "dist/is-cyclic.js",
   "module": "dist/is-cyclic.m.js",
   "esmodule": "dist/is-cyclic.modern.js",
   "scripts": {
-    "lint": "xo",
-    "fix": "xo --fix",
-    "test": "xo --fix && ava",
-    "build": "microbundle",
+    "lint": "standard",
+    "fix": "standard --fix",
+    "test": "standard --fix && ava",
+    "build": "standard --fix && microbundle",
     "dev": "microbundle watch"
   },
   "ava": {
@@ -40,11 +40,9 @@
   ],
   "devDependencies": {
     "ava": "^3.12.1",
+    "babel-plugin-tailcall-optimization": "^2.0.0",
     "esm": "^3.2.25",
     "microbundle": "^0.12.3",
-    "prettier": "^2.1.2"
-  },
-  "dependencies": {
-    "xo": "^0.33.1"
+    "standard": "^14.3.4"
   }
 }
