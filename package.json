@@ -1,6 +1,6 @@
 {
   "name": "is-cyclic",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple library to detect cyclic object references in JavaScript.",
   "source": "src/index.js",
   "main": "dist/is-cyclic.js",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/levibit/is-cyclic.git"
+    "url": "git+https://github.com/catmorphic/is-cyclic.git"
   },
   "keywords": [
     "object",
@@ -35,9 +35,9 @@
   "author": "Levi Wong",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
-    "url": "https://github.com/levibit/is-cyclic/issues"
+    "url": "https://github.com/catmorphic/is-cyclic/issues"
   },
-  "homepage": "https://github.com/levibit/is-cyclic#readme",
+  "homepage": "https://github.com/catmorphic/is-cyclic#readme",
   "files": [
     "src",
     "dist"
